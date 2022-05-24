@@ -5,16 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class ProgressionBase
 {
-    [HideInInspector]
-    public string name => tag;
+    [SerializeField] string name;
 
-    [SerializeField] string tag;
-
-    public string Tag
+    public string Name
     {
         get
         {
-            return tag;
+            return name;
         }
     }
 }
