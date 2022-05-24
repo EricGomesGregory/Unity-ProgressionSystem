@@ -23,7 +23,7 @@ public class ProgressionContainer : ScriptableObject
         for (int i = 0; i < progressions.Count; i++)
         {
             ProgressionBase element = progressions[i];
-            dictionary.Add(element.Tag, i);
+            dictionary.Add(element.Name, i);
         }
     }
 
