@@ -22,13 +22,16 @@ public class ProgressionContainerEditor : Editor
         GUILayout.Space(20f);
         GUILayout.Label("Progression Elements");
 
-        if(GUILayout.Button("Add Bool"))
+        if(GUILayout.Button("Bool"))
         { myTarget.progressions.Add(new ProgressionBool()); }
 
-        if (GUILayout.Button("Add Counter"))
+        if (GUILayout.Button("Counter"))
         { myTarget.progressions.Add(new ProgressionCounter()); }
 
-        if (GUILayout.Button("Add Time"))
+        if (GUILayout.Button("Time"))
         { myTarget.progressions.Add(new ProgressionTime()); }
+
+        if (GUILayout.Button("String"))
+        { myTarget.progressions.Add(new ProgressionString()); }
     }
 }

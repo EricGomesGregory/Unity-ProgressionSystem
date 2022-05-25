@@ -14,4 +14,6 @@ public class ProgressionBase
             return name;
         }
     }
+
+    public virtual void Reset() { }
 }

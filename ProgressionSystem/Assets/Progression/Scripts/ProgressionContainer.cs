@@ -34,21 +34,7 @@ public class ProgressionContainer : ScriptableObject
         {
             foreach (var element in progressions)
             {
-                if (element is ProgressionBool)
-                {
-                    ProgressionBool temp = (ProgressionBool)element;
-                    temp.Reset();
-                }
-                else if (element is ProgressionCounter)
-                {
-                    ProgressionCounter temp = (ProgressionCounter)element;
-                    temp.Reset();
-                }
-                else if (element is ProgressionTime)
-                {
-                    ProgressionTime temp = (ProgressionTime)element;
-                    temp.Reset();
-                }
+                element.Reset();
             }
         }
     }

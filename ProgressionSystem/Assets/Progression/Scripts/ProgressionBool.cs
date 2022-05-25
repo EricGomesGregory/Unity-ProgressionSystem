@@ -20,7 +20,7 @@ public class ProgressionBool : ProgressionBase
         value = true;
     }
 
-    public void Reset()
+    public override void Reset()
     {
         value = false;
     }

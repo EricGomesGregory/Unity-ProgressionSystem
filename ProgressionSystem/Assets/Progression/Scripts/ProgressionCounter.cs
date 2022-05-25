@@ -30,7 +30,7 @@ public class ProgressionCounter : ProgressionBase
         value--;
     }
 
-    public void Reset()
+    public override void Reset()
     {
         value = 0;
     }

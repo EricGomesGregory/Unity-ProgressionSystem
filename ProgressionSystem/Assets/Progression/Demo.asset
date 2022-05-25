@@ -12,14 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44dd57f7215f8364f92819b8f39cb5c4, type: 3}
   m_Name: Demo
   m_EditorClassIdentifier: 
-  progressions:
-  - rid: 259306078314692617
+  progressions: []
   resetOnPlay: 1
   references:
     version: 2
-    RefIds:
-    - rid: 259306078314692617
-      type: {class: ProgressionBool, ns: , asm: Assembly-CSharp}
-      data:
-        name: 
-        value: 0
+    RefIds: []

@@ -23,4 +23,9 @@ public class ProgressionString : ProgressionBase
     {
         return value == other;
     }
+
+    public override void Reset()
+    {
+        value = default;
+    }
 }

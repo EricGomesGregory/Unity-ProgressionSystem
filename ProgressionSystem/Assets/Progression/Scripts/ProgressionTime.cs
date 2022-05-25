@@ -35,7 +35,7 @@ public class ProgressionTime : ProgressionBase
         time = (int)Time.time;
     }
 
-    public void Reset()
+    public override void Reset()
     {
         time = 0;
     }
