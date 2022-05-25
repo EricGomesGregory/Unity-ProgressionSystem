@@ -19,6 +19,9 @@ public class ProgressionContainerEditor : Editor
 
     private void DisplayButtons()
     {
+        GUILayout.Space(20f);
+        GUILayout.Label("Progression Elements");
+
         if(GUILayout.Button("Add Bool"))
         { myTarget.progressions.Add(new ProgressionBool()); }
 

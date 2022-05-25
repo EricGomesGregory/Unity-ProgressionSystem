@@ -16,14 +16,15 @@ public class ProgressionContainer : ScriptableObject
 
     private void OnValidate()
     {
-        if (progressions == null) return;
-
-        dictionary = new Dictionary<string, int>();
-
-        for (int i = 0; i < progressions.Count; i++)
+        if (progressions != null || progressions.Count > 0)
         {
-            ProgressionBase element = progressions[i];
-            dictionary.Add(element.Name, i);
+            dictionary = new Dictionary<string, int>();
+
+            for (int i = 0; i < progressions.Count; i++)
+            {
+                ProgressionBase element = progressions[i];
+                dictionary.Add(element.Name, i);
+            }
         }
     }
 
@@ -115,5 +116,14 @@ public class ProgressionContainer : ScriptableObject
         }
 
         return false;
+    }
+
+    public void Trigger(string name)
+    {
+        ProgressionBool element;
+        if(TryGetProgressionBool(name, out element))
+        {
+            element.Trigger();
+        }
     }
 }
