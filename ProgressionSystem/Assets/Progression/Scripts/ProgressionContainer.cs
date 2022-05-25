@@ -53,7 +53,7 @@ public class ProgressionContainer : ScriptableObject
         return false;
     }
 
-    public bool TryGetProgressionBool(string name, out ProgressionBool element)
+    public bool TryGetProgression(string name, out ProgressionBool element)
     {
         element = null;
 
@@ -70,7 +70,7 @@ public class ProgressionContainer : ScriptableObject
         return false;
     }
 
-    public bool TryGetProgressionCounter(string name, out ProgressionCounter element)
+    public bool TryGetProgression(string name, out ProgressionCounter element)
     {
         element = null;
 
@@ -87,7 +87,7 @@ public class ProgressionContainer : ScriptableObject
         return false;
     }
 
-    public bool TryGetProgressionTime(string name, out ProgressionTime element)
+    public bool TryGetProgression(string name, out ProgressionTime element)
     {
         element = null;
 
@@ -107,7 +107,7 @@ public class ProgressionContainer : ScriptableObject
     public void Trigger(string name)
     {
         ProgressionBool element;
-        if(TryGetProgressionBool(name, out element))
+        if(TryGetProgression(name, out element))
         {
             element.Trigger();
         }

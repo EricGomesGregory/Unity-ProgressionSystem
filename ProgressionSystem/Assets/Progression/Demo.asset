@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44dd57f7215f8364f92819b8f39cb5c4, type: 3}
   m_Name: Demo
   m_EditorClassIdentifier: 
-  progressions: []
+  progressions:
+  - rid: 259306105227444225
+  - rid: 259306105227444226
   resetOnPlay: 1
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 259306105227444225
+      type: {class: ProgressionString, ns: , asm: Assembly-CSharp}
+      data:
+        name: CurrentScene
+        value: 
+    - rid: 259306105227444226
+      type: {class: ProgressionTime, ns: , asm: Assembly-CSharp}
+      data:
+        name: GameplayTime
+        time: 0

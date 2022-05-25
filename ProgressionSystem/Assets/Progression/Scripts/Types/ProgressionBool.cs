@@ -15,6 +15,11 @@ public class ProgressionBool : ProgressionBase
         }
     }
 
+    public void Set(bool value)
+    {
+        this.value = value;
+    }
+
     public void Trigger()
     {
         value = true;
