@@ -1,5 +1,5 @@
 # Progression System
-This is a free and open system to store progression during gameplay...
+This is a free and open system to store progression during gameplay using scriptable objects.
 
 ## Description
 The system is structures with the following elements
