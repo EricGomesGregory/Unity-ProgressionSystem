@@ -27,7 +27,7 @@ public class ProgressionCounter : ProgressionBase
 
     public void Decrement()
     {
-        value--;
+        value = Mathf.Clamp(value -1, 0, int.MaxValue);
     }
 
     public void Set(int value)
