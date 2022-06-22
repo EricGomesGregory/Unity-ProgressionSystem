@@ -30,6 +30,11 @@ public class ProgressionCounter : ProgressionBase
         value--;
     }
 
+    public void Set(int value)
+    {
+        this.value = Mathf.Clamp(value, 0, int.MaxValue);
+    }
+
     public override void Reset()
     {
         value = 0;
