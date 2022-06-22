@@ -33,5 +33,8 @@ public class ProgressionContainerEditor : Editor
 
         if (GUILayout.Button("String"))
         { myTarget.progressions.Add(new ProgressionString()); }
+
+        if (GUILayout.Button("Float"))
+        { myTarget.progressions.Add(new ProgressionFloat()); }
     }
 }

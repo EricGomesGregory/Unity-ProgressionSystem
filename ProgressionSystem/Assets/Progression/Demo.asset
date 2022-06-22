@@ -22,10 +22,10 @@ MonoBehaviour:
     - rid: 259306105227444225
       type: {class: ProgressionString, ns: , asm: Assembly-CSharp}
       data:
-        name: CurrentScene
+        name: Current Scene
         value: 
     - rid: 259306105227444226
       type: {class: ProgressionTime, ns: , asm: Assembly-CSharp}
       data:
-        name: GameplayTime
+        name: Gameplay Time
         time: 0
